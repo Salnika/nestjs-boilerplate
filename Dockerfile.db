@@ -1,0 +1,10 @@
+# Use an official PostgreSQL runtime as the base image
+FROM postgres:latest
+
+# Set environment variables
+ENV POSTGRES_USER=test
+ENV POSTGRES_PASSWORD=test
+ENV POSTGRES_DB=test
+
+# Make port 5432 available to the outside world
+EXPOSE 5432
